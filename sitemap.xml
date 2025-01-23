@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2025/01/22/Windows%E9%80%9A%E8%BF%87Vbox%E5%AE%89%E8%A3%85CentOS%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc>
+    <loc>http://lzzs.work/2025/01/22/Windows%E9%80%9A%E8%BF%87Vbox%E5%AE%89%E8%A3%85CentOS%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc>
     
     <lastmod>2025-01-23</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/link/index.html</loc>
+    <loc>http://lzzs.work/link/index.html</loc>
     
     <lastmod>2025-01-22</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/index.html</loc>
+    <loc>http://lzzs.work/tags/index.html</loc>
     
     <lastmod>2025-01-20</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/index.html</loc>
+    <loc>http://lzzs.work/categories/index.html</loc>
     
     <lastmod>2025-01-20</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/about/index.html</loc>
+    <loc>http://lzzs.work/about/index.html</loc>
     
     <lastmod>2025-01-20</lastmod>
     
@@ -48,13 +48,27 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
+    <loc>http://lzzs.work/</loc>
     <lastmod>2025-01-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
+  <url>
+    <loc>http://lzzs.work/tags/Redhat-Linux-Vbox/</loc>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>http://lzzs.work/categories/RedHat/</loc>
+    <lastmod>2025-01-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>

@@ -3,11 +3,11 @@
   <title>Lx Faither&#39; Blog</title>
   
   <subtitle>学海无涯,苦作舟,一个老年程序员的blog</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="http://lzzs.work/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
-  <updated>2025-01-23T13:07:20.798Z</updated>
-  <id>http://example.com/</id>
+  <link href="http://lzzs.work/"/>
+  <updated>2025-01-23T13:27:04.948Z</updated>
+  <id>http://lzzs.work/</id>
   
   <author>
     <name>Lx Faither</name>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Windows通过Vbox安装RedHat虚拟机</title>
-    <link href="http://example.com/2025/01/22/Windows%E9%80%9A%E8%BF%87Vbox%E5%AE%89%E8%A3%85CentOS%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
-    <id>http://example.com/2025/01/22/Windows%E9%80%9A%E8%BF%87Vbox%E5%AE%89%E8%A3%85CentOS%E8%99%9A%E6%8B%9F%E6%9C%BA/</id>
+    <link href="http://lzzs.work/2025/01/22/Windows%E9%80%9A%E8%BF%87Vbox%E5%AE%89%E8%A3%85CentOS%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    <id>http://lzzs.work/2025/01/22/Windows%E9%80%9A%E8%BF%87Vbox%E5%AE%89%E8%A3%85CentOS%E8%99%9A%E6%8B%9F%E6%9C%BA/</id>
     <published>2025-01-22T10:50:01.000Z</published>
-    <updated>2025-01-23T13:07:20.798Z</updated>
+    <updated>2025-01-23T13:27:04.948Z</updated>
     
     <content type="html"><![CDATA[<h3 id="相关程序下载及安装"><a href="#相关程序下载及安装" class="headerlink" title="相关程序下载及安装"></a>相关程序下载及安装</h3><ul><li><a href="https://download.virtualbox.org/virtualbox/7.1.6/VirtualBox-7.1.6-167084-Win.exe">Vbox7.1.6下载</a></li><li><a href="https://mirrors.centos.org/mirrorlist?path=/10-stream/BaseOS/x86_64/iso/CentOS-Stream-10-latest-x86_64-dvd1.iso&redirect=1&protocol=https">CentOS 10下载</a></li><li><a href="https://mirrors.centos.org/mirrorlist?path=/10-stream/BaseOS/aarch64/iso/CentOS-Stream-10-latest-aarch64-dvd1.iso&redirect=1&protocol=https">ARM64 架构 CentOS 10 下载</a></li><li><a href="https://access.cdn.redhat.com/content/origin/files/sha256/80/802b70dc854114ec46aec37ea358a46e57fa41a643b9edfce34fb532d66e881e/rhel-9.5-x86_64-boot.iso?_auth_=1737634765_a9266ff17bfdd6a16e350337a71dd931">Red Hat 下载</a></li></ul><p><strong>注意</strong>在安装Vbox时，首先需要进入 <strong>控制面板\程序\启动或关闭windows功能</strong> 中关闭Hyper-v服务，如果在安装过程中出现<code>Missing Dependencies Python Core / win32api</code>的提示，则需要先进行<code>Python和win32apia</code>的安装。<br><img src="/2025/01/22/Windows%E9%80%9A%E8%BF%87Vbox%E5%AE%89%E8%A3%85CentOS%E8%99%9A%E6%8B%9F%E6%9C%BA/image-2.png" alt="alt text"></p><p><a href="https://www.python.org/ftp/python/3.13.1/python-3.13.1-amd64.exe">Phthon3.13.1下载</a>,安装Python后打开控制台，输入<code>python --version</code>出现版本信息则表示Python安装成功，已经安装其他版本的请勿重复安装。<br>之后在控制台输入<code>pip install pywin32</code> 安装 <code>pywin32</code>程序，如果使用该命令之后依旧有缺失提示，那么执行<code>py -m pip install pywin32</code> 重新安装, 因为有可能你的电脑上存在多个pip模块，也就是存在多个Python程序。在安装Python和pywin32后以下确实提示消失。<br><img src="/2025/01/22/Windows%E9%80%9A%E8%BF%87Vbox%E5%AE%89%E8%A3%85CentOS%E8%99%9A%E6%8B%9F%E6%9C%BA/image-3.png" alt="alt text"></p><p>在Vbox安装完成后，会生成一个网卡，该网卡用于主机和虚拟机的通信。<br>网卡配置IP为<code>192.168.56.1</code>,子网掩码为<code>255.255.255.0</code>，也就是虚拟机可配置IP范围为<code>192.168.56.1-255</code>。</p><table><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><img src="/2025/01/22/Windows%E9%80%9A%E8%BF%87Vbox%E5%AE%89%E8%A3%85CentOS%E8%99%9A%E6%8B%9F%E6%9C%BA/image.png" alt="alt text"></td><td><img src="/2025/01/22/Windows%E9%80%9A%E8%BF%87Vbox%E5%AE%89%E8%A3%85CentOS%E8%99%9A%E6%8B%9F%E6%9C%BA/image-1.png" alt="alt text"></td></tr></tbody></table><p>在下载完RedHa镜像，我们打开Vbox虚拟机，通过 <strong>新建（ctrl+n）</strong> 打开虚拟机新增界面，在 <strong>虚拟光驱</strong>选项中加载入我们刚下载好的<code>RedHa</code>镜像文件，写入<strong>名称</strong>后,勾选<strong>跳过自动安装</strong>,其他配置使用默认即可,之后点击<strong>完成</strong>即可创建虚拟机。<br><strong>注意</strong>在创建虚拟机时添加虚拟光驱后，Vbox会根据镜像选择相关的配置及镜像信息，我们无需填写，使用默认即可。</p><p><strong>错误</strong><code>make sure the kernel module has been loaded successfully</code><br>在<strong>启动</strong>刚创建的虚拟机时,遇到了以上的错误信息，翻译成中文为<em>确定核心模块已经加载成功</em>，出现该问问题的原因是<code>vboxsup</code>服务没有启动。<br><img src="/2025/01/22/Windows%E9%80%9A%E8%BF%87Vbox%E5%AE%89%E8%A3%85CentOS%E8%99%9A%E6%8B%9F%E6%9C%BA/image-4.png" alt="alt text"></p><p><strong>解决方法</strong>根据提示进入控制台执行命令<code>sc.exe query vboxsup</code>，发现<code>vboxsup</code>服务并没有启动。之后通过<strong>管理员身份</strong>启动控制台，执行<code>sc start vboxsup</code>启动服务，在不具有管理员权限的cmd中启动该服务会出现<em>拒绝访问</em>错误。</p><table><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><img src="/2025/01/22/Windows%E9%80%9A%E8%BF%87Vbox%E5%AE%89%E8%A3%85CentOS%E8%99%9A%E6%8B%9F%E6%9C%BA/image-5.png" alt="alt text"></td><td><img src="/2025/01/22/Windows%E9%80%9A%E8%BF%87Vbox%E5%AE%89%E8%A3%85CentOS%E8%99%9A%E6%8B%9F%E6%9C%BA/image-6.png" alt="alt text"></td><td><img src="/2025/01/22/Windows%E9%80%9A%E8%BF%87Vbox%E5%AE%89%E8%A3%85CentOS%E8%99%9A%E6%8B%9F%E6%9C%BA/image-7.png" alt="alt text"></td></tr></tbody></table><h3 id="RedHa-安装"><a href="#RedHa-安装" class="headerlink" title="RedHa 安装"></a>RedHa 安装</h3><p>在Vbox中启动创建的Linux虚拟机后，会自动加载入我们选择的RedHa镜像，在启动后根据以下步骤选择信息。因本人安装<code>Centos</code>一直不成功，卡在了Install界面，所以放弃<code>Centos</code>,改用<code>RedHat</code>。使用以下步骤进行安装。</p><ol><li>在加载了<code>Redhat</code>镜像后，会直接进入选择语言界面，直接选择<code>English</code>（或选择自己想要的语言）点击<code>Contiue</code>下一步</li><li>进入设置界面，根据提示进行基本设置，点击<strong>Root Password</strong>设置<code>root</code>密码为<code>123456</code></li><li>点击<strong>Time &amp; Date</strong>设置时区为亚洲上海</li><li>点击<strong>Installation Destination</strong>选择安装的盘符，在创建虚拟机时如果不添加设置会自动给我创建20G的虚拟硬盘</li><li>点击<strong>Connect to Red Hat</strong>登录我们的Red Hat 账号，在下载RedHat时必须注册，<a href="https://developers.redhat.com/">red hat官网</a></li><li>点击<strong>Software Selection</strong>选择需要的软件，在这里我只选择了Minimal Install，不安装图形界面，最小化进行安装</li><li>最后点击<strong>Begin Install</strong>开始安装RedHat虚拟机</li><li>在安装完成后点击Reboot System 进入系统，之后可以点击虚拟机**设备&#x2F;分配光驱&#x2F;Remove Disk From …**移除所有挂在的镜像<table><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td><img src="/2025/01/22/Windows%E9%80%9A%E8%BF%87Vbox%E5%AE%89%E8%A3%85CentOS%E8%99%9A%E6%8B%9F%E6%9C%BA/image-9.png" alt="alt text"></td><td><img src="/2025/01/22/Windows%E9%80%9A%E8%BF%87Vbox%E5%AE%89%E8%A3%85CentOS%E8%99%9A%E6%8B%9F%E6%9C%BA/image-10.png" alt="alt text"></td><td><img src="/2025/01/22/Windows%E9%80%9A%E8%BF%87Vbox%E5%AE%89%E8%A3%85CentOS%E8%99%9A%E6%8B%9F%E6%9C%BA/image-11.png" alt="alt text"></td></tr></tbody></table></li></ol><p>最后我们可以登录通过设置的账号密码登录服务器了，然后就可以安装其他例如Mysql等服务了。<br><img src="/2025/01/22/Windows%E9%80%9A%E8%BF%87Vbox%E5%AE%89%E8%A3%85CentOS%E8%99%9A%E6%8B%9F%E6%9C%BA/image-12.png" alt="alt text"></p>]]></content>
     
@@ -34,6 +34,10 @@
     
     
     
+    <category term="RedHat" scheme="http://lzzs.work/categories/RedHat/"/>
+    
+    
+    <category term="Redhat Linux Vbox" scheme="http://lzzs.work/tags/Redhat-Linux-Vbox/"/>
     
   </entry>
   
