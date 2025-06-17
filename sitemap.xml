@@ -2,27 +2,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://lzzs.work/baidu_verify_codeva-t18ylyffnt.html</loc>
+    <loc>http://lzzs.work/2025/06/17/dockergainianjijibenshiyong/</loc>
     
-    <lastmod>2025-02-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://lzzs.work/2025/01/24/MySQL%E5%9C%A8linux%E4%B8%8B%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</loc>
-    
-    <lastmod>2025-02-15</lastmod>
+    <lastmod>2025-06-17</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://lzzs.work/2025/01/22/Windows%E9%80%9A%E8%BF%87Vbox%E5%AE%89%E8%A3%85CentOS%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc>
+    <loc>http://lzzs.work/2025/06/17/npmbaoguanliqi/</loc>
     
-    <lastmod>2025-02-15</lastmod>
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://lzzs.work/2025/06/17/hexojibenshiyong/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://lzzs.work/2025/01/24/mysqlzailinuxxiadeanzhuangjijibenshiyong/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://lzzs.work/2025/01/22/windowstongguovboxanzhuangcentosxuniji/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -67,22 +85,43 @@
 
   <url>
     <loc>http://lzzs.work/</loc>
-    <lastmod>2025-02-16</lastmod>
+    <lastmod>2025-06-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>http://lzzs.work/tags/Redhat-Linux-Vbox/</loc>
-    <lastmod>2025-02-16</lastmod>
+    <loc>http://lzzs.work/tags/docker/</loc>
+    <lastmod>2025-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://lzzs.work/tags/hexo/</loc>
+    <lastmod>2025-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://lzzs.work/tags/MySQL/</loc>
-    <lastmod>2025-02-16</lastmod>
+    <lastmod>2025-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://lzzs.work/tags/NPM/</loc>
+    <lastmod>2025-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://lzzs.work/tags/Redhat-Linux-Vbox/</loc>
+    <lastmod>2025-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -90,15 +129,29 @@
 
   
   <url>
-    <loc>http://lzzs.work/categories/RedHat/</loc>
-    <lastmod>2025-02-16</lastmod>
+    <loc>http://lzzs.work/categories/%E5%AE%B9%E5%99%A8%E5%8C%96/</loc>
+    <lastmod>2025-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://lzzs.work/categories/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    <lastmod>2025-02-16</lastmod>
+    <loc>http://lzzs.work/categories/%E6%9D%82%E8%AE%B0/</loc>
+    <lastmod>2025-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://lzzs.work/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <lastmod>2025-06-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://lzzs.work/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc>
+    <lastmod>2025-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
